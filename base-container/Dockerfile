@@ -12,6 +12,6 @@ WORKDIR /corrade
 
 RUN wget http://corrade.grimore.org/download/continuous/corrade/Corrade-${CORRADE_VERSION}.zip && unzip *.zip
 
-RUN rm -rf Cache && rm -rf State && rm -rf Logs
+RUN rm -rf Cache && rm -rf State && rm -rf Logs && rm -rf Databases
 
 ADD *.sh /corrade/
