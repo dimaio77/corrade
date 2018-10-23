@@ -87,4 +87,4 @@ $ ./stop.sh
 
 This is my hobby. That being said, I am happy to help, if you have issues with the Docker container. If you want to learn about Docker, feel free to go to [docker.io](https://docker.io). If you want to learn about Corrade, plese got to the [Wizardry and Steamworks website](http://grimore.org).
 
-You may contact me in-world on SL: [Cari Tedeschi @ SL](secondlife:///app/agent/7c0db6d3-41b2-4a9f-8df7-c38c9459e79e/about)
+You may contact me in-world on SL: secondlife:///app/agent/7c0db6d3-41b2-4a9f-8df7-c38c9459e79e/about
