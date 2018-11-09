@@ -10,7 +10,7 @@ RUN mkdir /corrade
 
 WORKDIR /corrade
 
-RUN wget http://corrade.grimore.org/download/continuous/corrade/Corrade-${CORRADE_VERSION}.zip && unzip *.zip
+RUN wget http://corrade.grimore.org/download/release/corrade/Corrade-${CORRADE_VERSION}.zip && unzip *.zip
 
 RUN rm -rf Cache && rm -rf State && rm -rf Logs && rm -rf Databases
 
