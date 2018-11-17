@@ -1,5 +1,7 @@
 # Using the Corrade Docker container
 
+**Please note:** This repository is a mirror of https://bitbucket.org/carissima/corrade.git
+
 I created this for myself, and I soon realised that other people would be interested in using it for themselves. I hope to make that a little easier by writing this.
 
 Please note that these instructions only apply to running Corrade using the [carissima/corrade](https://hub.docker.com/r/carissima/corrade) Docker container. If you want to run Corrade directly on your host machine, then these instructions are not for you.
