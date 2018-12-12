@@ -4,11 +4,11 @@ I created this for myself, and I soon realised that other people would be intere
 
 Please note that these instructions only apply to running Corrade using the [carissima/corrade](https://hub.docker.com/r/carissima/corrade) Docker container. If you want to run Corrade directly on your host machine, then these instructions are not for you.
 
-If you run into any snags, because I've not explained something properly, please feel free to send a pull request or just let me know.
+If you run into any snags, because I've not explained something properly, please feel free to send a pull request or open an issue.
 
 ## Before you can run the container
 
-There are a few prerequisites that you will need to do on the machine that will run the container (hereafter called "the host machine"). I run a virtual machine as my host, but you can also run it directly on your computer.
+There are a few prerequisites that you will need to install on the machine that will run the container (hereafter called "the host machine"). I run a virtual machine as my host, but you can also run it directly on your computer.
 
 ### 1. Install Docker CE
 
@@ -44,11 +44,11 @@ $ sudo docker stop corrade
 
 In order to run Corrade, you have to add your personal Configuration.xml to the `custom-container` folder and build it. See "Create your Corrade configuration" for more details.
 
-Since you have Docker installed on your host machine, you can build the container, optionally pushing it to a Docker container repo of your own.
+Since you have Docker installed on your host machine, you can build the container, optionally pushing it to a Docker repo of your own.
 
 Edit `build.sh`, replacing `YOUR_CONTAINER_NAME_HERE` with the name of your container.
 
-```shell
+```bash
 #! /bin/bash
 
 CONTAINER=YOUR_CONTAINER_NAME_HERE
@@ -70,7 +70,7 @@ $ ./build.sh
 
 ## Run your Corrade in its container!
 
-As long as you have copied the contents of the "host" directory to your home directory and created your own container, you should be able to:
+As long as you have copied the contents of the "host" directory to your working directory and created your own container, you should be able to:
 
 **Start Corrade**
 
