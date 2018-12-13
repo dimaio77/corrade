@@ -1,6 +1,6 @@
 # Using the Corrade Docker container
 
-**Please note:**: There is now a container for the continuous build of C10 at [carissima/corrade-continuous](https://hub.docker.com/r/carissima/corrade-continuous). This README hasn't been updated for that yet.
+**Please note:** There is now a container for the continuous build of C10 at [carissima/corrade-continuous](https://hub.docker.com/r/carissima/corrade-continuous). This README hasn't been updated for that yet.
 
 I created this for myself, and I soon realised that other people would be interested in using it for themselves. I hope to make that a little easier by writing this.
 
