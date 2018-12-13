@@ -12,18 +12,20 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-VERSION=10.1.6913.18256
+FROM carissima/mono-complete:latest
 
-all: build
+ARG CORRADE_VERSION
 
-build:
-	# Build the base image without the configuration
-	docker build --build-arg CORRADE_VERSION=${VERSION} \
-		-f Dockerfile.continuous \
-		-t carissima/corrade-continuous\:latest \
-		-t carissima/corrade-continuous\:${VERSION} .
+LABEL maintainer cari.tedeschi@gmail.com
 
-push:
-	# Push to the public repo
-	docker push carissima/corrade-continuous\:${VERSION}
-	docker push carissima/corrade-continuous\:latest
+RUN apt-get update && apt-get install -y wget unzip procps nano
+
+RUN mkdir /corrade
+
+WORKDIR /corrade
+
+RUN wget http://corrade.grimore.org/download/continuous/corrade/Corrade-${CORRADE_VERSION}.zip && unzip *.zip
+
+RUN rm -rf Cache && rm -rf State && rm -rf Logs && rm -rf Databases
+
+ADD *.sh /corrade/
