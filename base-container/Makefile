@@ -12,7 +12,7 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-VERSION=test-do-not-use
+VERSION=test-dont-use
 
 all: build
 
