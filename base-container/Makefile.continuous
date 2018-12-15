@@ -27,3 +27,6 @@ push:
 	# Push to the public repo
 	docker push carissima/corrade-continuous\:${VERSION}
 	docker push carissima/corrade-continuous\:latest
+
+notice:
+	echo "@notice ([Corrade 10 Continuous Docker Container]) (The Corrade 10 [Continuous Branch] ${VERSION} Docker container is now available! Get 'er while she's hot! https://hub.docker.com/r/carissima/corrade-continuous)" > notice.continuous.${VERSION}.txt

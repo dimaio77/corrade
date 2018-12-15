@@ -30,3 +30,6 @@ push:
 	docker push carissima/corrade\:10.1
 	docker push carissima/corrade\:release
 	docker push carissima/corrade\:latest
+
+notice:
+	echo "@notice ([Corrade 10 Release Docker Container]) (The Corrade 10 [Release Branch] ${VERSION} Docker container is now available! Get 'er while she's hot! https://hub.docker.com/r/carissima/corrade)" > notice.release.${VERSION}.txt
