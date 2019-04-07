@@ -12,7 +12,8 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-VERSION=10.2.7028.4321
+VERSION=10.2.7036.15272
+SHORT_VERSION=10.2
 
 all: build
 
@@ -21,11 +22,13 @@ build:
 	docker build --build-arg CORRADE_VERSION=${VERSION} \
 		-f Dockerfile.continuous \
 		-t carissima/corrade-continuous\:latest \
+		-t carissima/corrade-continuous\:${SHORT_VERSION} \
 		-t carissima/corrade-continuous\:${VERSION} .
 
 push:
 	# Push to the public repo
 	docker push carissima/corrade-continuous\:${VERSION}
+	docker push carissima/corrade-continuous\:${SHORT_VERSION}
 	docker push carissima/corrade-continuous\:latest
 
 notice:
